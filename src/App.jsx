@@ -26,23 +26,23 @@ const Footer = styled.footer`
 
 function App() {
   return (
-      <Fragment>
-          <div className="SiteContainer">
-              <Header />
-              <Content>
-                  <Switch>
-                      <Route exact path='/' component={ Wrapper(Home) } />
-                      <Route path='/posts' component={ Wrapper(RedditPosts) } />
-                      {/*<Route path="/news/:slug" component={ Wrapper(Post) } />*/}
-                      <Route component={ Wrapper(Home) } />
-                  </Switch>
-              </Content>
-              <Footer>
-                  Copyright © {new Date().getFullYear()}, Blaize Liebenberg
-              </Footer>
-          </div>
-          <GlobalStyle />
-      </Fragment>
+    <Fragment>
+      <div className="SiteContainer">
+        <Header />
+        <Content>
+          <Switch>
+            <Route exact path='/' component={ Wrapper(Home) } />
+            <Route path='/posts' component={ Wrapper(RedditPosts) } />
+            {/*<Route path="/news/:slug" component={ Wrapper(Post) } />*/}
+            <Route component={ Wrapper(Home) } />
+          </Switch>
+        </Content>
+        <Footer>
+            Copyright © {new Date().getFullYear()}, Blaize Liebenberg
+        </Footer>
+      </div>
+      <GlobalStyle />
+    </Fragment>
   );
 }
 

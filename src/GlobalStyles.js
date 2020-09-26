@@ -11,19 +11,19 @@ body {
 }
 
 .main-container { 
-    margin-right:auto;
-    margin-left:auto;
-    padding-left:15px;
-    padding-right:15px;
+  margin-right:auto;
+  margin-left:auto;
+  padding-left:15px;
+  padding-right:15px;
 }
 @media (min-width:768px) {
-    .main-container { width:750px }
+  .main-container { width:750px }
 }
 @media (min-width:992px) {
-    .main-container { width:970px }
+  .main-container { width:970px }
 }
 @media (min-width:1200px) {
-    .main-container {  width:1200px }
+  .main-container {  width:1200px }
 }
 
 .app-logo {

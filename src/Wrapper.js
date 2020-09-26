@@ -3,33 +3,33 @@ import { withRouter } from "react-router";
 import Loading from "./components/Loading";
 
 export default WrappedComponent => {
-    class Wrapper extends Component {
-        state = { isLoading: true };
+  class Wrapper extends Component {
+    state = { isLoading: true };
 
-        componentDidMount = () => this.setTimer();
+    componentDidMount = () => this.setTimer();
 
-        componentDidUpdate = prevProps => {
-            if (this.props.location !== prevProps.location) {
-                this.clearTimer();
-                this.setState({ isLoading: true }, () => this.setTimer());
-            }
-        };
+    componentDidUpdate = prevProps => {
+      if (this.props.location !== prevProps.location) {
+        this.clearTimer();
+        this.setState({ isLoading: true }, () => this.setTimer());
+      }
+    };
 
-        clearTimer = () => clearTimeout(this.timeout);
+    clearTimer = () => clearTimeout(this.timeout);
 
-        timer = () => this.setState({ isLoading: false }, () => this.clearTimer());
+    timer = () => this.setState({ isLoading: false }, () => this.clearTimer());
 
-        setTimer = () => (this.timeout = setTimeout(this.timer, 200));
+    setTimer = () => (this.timeout = setTimeout(this.timer, 200));
 
-        render = () => (
-            <Fragment>
-                {
-                    this.state.isLoading
-                        ? <Loading />
-                        : <WrappedComponent {...this.props} />
-                }
-            </Fragment>
-        );
-    }
-    return withRouter(Wrapper);
+    render = () => (
+      <Fragment>
+        {
+          this.state.isLoading
+            ? <Loading />
+            : <WrappedComponent {...this.props} />
+        }
+      </Fragment>
+    );
+  }
+  return withRouter(Wrapper);
 };
