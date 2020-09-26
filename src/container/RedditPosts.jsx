@@ -1,13 +1,13 @@
 import React, { Component } from 'react';
 
-class Footer extends Component {
+class RedditPosts extends Component {
     render() {
         return (
             <div>
-                FOOTER
+                YES
             </div>
         );
     }
 }
 
-export default Footer;
+export default RedditPosts;

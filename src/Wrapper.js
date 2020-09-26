@@ -1,5 +1,6 @@
 import React, { Component, Fragment } from "react";
 import { withRouter } from "react-router";
+import Loading from "./components/Loading";
 
 export default WrappedComponent => {
     class Wrapper extends Component {
@@ -24,7 +25,7 @@ export default WrappedComponent => {
             <Fragment>
                 {
                     this.state.isLoading
-                        ? <div>Loading...</div>
+                        ? <Loading />
                         : <WrappedComponent {...this.props} />
                 }
             </Fragment>

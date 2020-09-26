@@ -1,5 +1,7 @@
-import Home from '../container/Home'
+import Home from '../container/Home';
+import RedditPosts from '../container/RedditPosts'
 
 export {
-    Home
+    Home,
+    RedditPosts,
 }
