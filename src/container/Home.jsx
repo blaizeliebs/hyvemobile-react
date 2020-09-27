@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import logo from '../images/logo.svg';
+import HomeImage from '../components/HomeImage'
 import styled from 'styled-components';
 
 const AppContainer = styled.div`
@@ -22,11 +22,12 @@ class Home extends Component {
       <div className="main-container">
         <AppContainer>
           <HomeContent>
-            <img src={logo} className="app-logo" alt="logo" />
+            <HomeImage />
             <p>
               Using create-react-app together with styled-components, airbnb's eslint, a Wrapper HOC, react-router and redux
               this app allows you to fetch reddit post and view them.
               avoided using component libraries
+              <br />*N.B The Change Logo above is also just to demonstrate basic use of React Hooks API
             </p>
             <a className="app-link" href="/posts" target="_self" rel="noopener noreferrer">
               Fetch Reddit Posts

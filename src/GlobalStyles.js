@@ -26,9 +26,16 @@ body {
   .main-container {  width:1200px }
 }
 
-.app-logo {
+.app-logo-react {
   height: 40vmin;
   pointer-events: none;
+}
+
+.app-logo-hyve {
+  height: 20vmin;
+  margin-top: -30px;
+  pointer-events: none;
+  margin-bottom: 50px;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -38,8 +45,12 @@ body {
 }
 
 .app-link {
-  color: #61dafb;
+  color: #fc471e;
   font-size: 1.125rem;
+  font-weight: bold;
+  border: 2px dashed #fc471e;
+  text-decoration: none;
+  padding: 5px 10px;
 }
 
 @keyframes App-logo-spin {

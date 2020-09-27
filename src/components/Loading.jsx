@@ -21,7 +21,7 @@ const motion = keyframes`
   100% { transform: translateX(0) scale(1) };
 `;
 
-const animation  = css`
+const animation = css`
   ${motion} 3s cubic-bezier(0.77, 0, 0.175, 1) infinite;
 `;
 

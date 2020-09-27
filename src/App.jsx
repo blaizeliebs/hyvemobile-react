@@ -5,8 +5,9 @@ import styled, { createGlobalStyle } from 'styled-components';
 import { GlobalStyles } from './GlobalStyles';
 
 import {
-    Home,
-    RedditPosts,
+  Home,
+  RedditPosts,
+  Post,
 } from './routers'
 
 import Header from './components/Header';
@@ -33,7 +34,7 @@ function App() {
           <Switch>
             <Route exact path='/' component={ Wrapper(Home) } />
             <Route path='/posts' component={ Wrapper(RedditPosts) } />
-            {/*<Route path="/news/:slug" component={ Wrapper(Post) } />*/}
+            <Route path="/post/:id" component={ Wrapper(Post) } />
             <Route component={ Wrapper(Home) } />
           </Switch>
         </Content>
