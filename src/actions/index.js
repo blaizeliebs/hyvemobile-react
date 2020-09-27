@@ -1,3 +1,4 @@
+/* eslint-disable no-else-return, consistent-return */
 import fetch from 'cross-fetch';
 
 export const REQUEST_POSTS = 'REQUEST_POSTS';

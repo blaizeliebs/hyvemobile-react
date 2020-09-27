@@ -1,3 +1,4 @@
+/* eslint-disable */
 import React, { Component, Fragment } from "react";
 import { withRouter } from "react-router";
 import Loading from "./components/Loading";
