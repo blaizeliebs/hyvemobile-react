@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 import { Route, Switch } from 'react-router-dom';
 import Wrapper from './Wrapper';
-import styled, { createGlobalStyle } from 'styled-components';
-import { GlobalStyles } from './GlobalStyles';
+import styled from 'styled-components';
+import GlobalStyles from './GlobalStyles';
 
 import {
   Home,
@@ -11,8 +11,6 @@ import {
 } from './routers'
 
 import Header from './components/Header';
-
-const GlobalStyle = createGlobalStyle`${GlobalStyles}`;
 
 const Content = styled.div`
   min-height: 60vh;
@@ -42,7 +40,7 @@ function App() {
             Copyright © {new Date().getFullYear()}, Blaize Liebenberg
         </Footer>
       </div>
-      <GlobalStyle />
+      <GlobalStyles />
     </Fragment>
   );
 }
